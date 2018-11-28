@@ -38,8 +38,8 @@ while True:
     )
     user.user_bmi_calculation()
     user.user_bmi_results()
-    repeat = input("Do you want another results? Y/N: ")
-    if repeat == "y" or repeat == "Y":
+    getresult = input("Do you want another results? Y/N: ")
+    if getresult == "y" or getresult == "Y":
         clear()
         continue
     else:
