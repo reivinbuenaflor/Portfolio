@@ -6,7 +6,7 @@ def getting_quizAve_student(quiz_1, quiz_2, quiz_3, quiz_4, quiz_5, quiz_6):
 def getting_mtExamAve_student(mtExam_1, mtExam_2, mtExam_3):
     return (mtExam_1 + mtExam_2 + mtExam_3) / 3
 def getting_examAve_student(preExam, midExam, fExam):
-    return (preExam + midExam + fExam) / 3
+    return (preExam + midExam + fnExam) / 3
 def getting_lOutput_student(quizAve, mtExamAve, examAve):
     return float((quizAve * .30) + (mtExamAve * .30) + (examAve * .40))
 def getting_lOutput_results(lOutput):
@@ -40,11 +40,11 @@ mtExam_3 = int(input(print("Enter the result of Mastery Exam 3: ")))
 #Getting Input for Exams of a Student
 preExam = int(input(print("Enter the result of Prelim: ")))
 midExam = int(input(print("Enter the result of Midterm: ")))
-fExam = int(input(print("Enter the result of Finals: ")))
+fnExam = int(input(print("Enter the result of Finals: ")))
 
 quizAve = getting_quizAve_student(quiz_1, quiz_2, quiz_3, quiz_4, quiz_5, quiz_6)
 mtExamAve = getting_mtExamAve_student(mtExam_1, mtExam_2, mtExam_3)
-examAve = getting_examAve_student(preExam, midExam, fExam)
+examAve = getting_examAve_student(preExam, midExam, fnExam)
 lOutput = getting_lOutput_student(quizAve, mtExamAve, examAve)
 getting_lOutput_results(lOutput)
 
