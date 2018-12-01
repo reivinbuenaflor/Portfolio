@@ -1,7 +1,7 @@
 '''
 This Functions Calculates quiz average, mastery exam average, exam average, and the learning output of a student
 '''
-class grading_system_lOutput(self, quiz, mtExam, preExam, ):
+class grading_system_lOutput(self, quiz, mtExam,  ):
     pass
 
 #Getting Input for Quizzes of a Student
