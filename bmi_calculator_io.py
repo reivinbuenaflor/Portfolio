@@ -1,15 +1,25 @@
 '''
 Input for Weight and Height of a user and outputs the bmi result of a user.
 '''
-import bmi_calculation
+import os
+from bmi_calculation import bmi_calculator_cls
 
-print("What is your Weight?: ")
-userWeight_kg = float(input())
-print("What is your Height?: ")
-userHeight_m = float(input())
+clear = lambda: os.system('cls')
 
-userBMI_results = bmi_calculation.userBMI_calculation(userWeight_kg, userHeight_m)
-bmi_calculation.getting_userBMI_results(userBMI_results)
-
+while True:
+    user =  bmi_calculator_cls(
+        float(input("Enter your Weight(kg): ")),
+        float(input("Enter your Height(m): "))
+    )
+    user.user_bmi_calculation()
+    user.user_bmi_results()
+    
+    cont = input("Do you want to continue? Y/N: ")
+    if cont == "y" or cont == "Y":
+        clear()
+        continue
+    else:
+        clear()
+        os._exit(1) 
 
 
