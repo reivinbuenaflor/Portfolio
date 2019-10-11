@@ -20,32 +20,32 @@ public class Main {
         System.out.println("Enter the length of Second Array: ");
         getsArray = sc.nextInt();
         
-        A = new int[getfArray];
-        B = new int[getsArray];
-        C = new int[getfArray][getsArray];
+        A = new int[getfArray+1];
+        B = new int[getsArray+1];
+        C = new int[getsArray+1][getfArray+1];
         
         System.out.println("");
         System.out.print("  ");
-        for(int i = 1; i < B.length; i++) {
+        for(int i = 1; i < A.length; i++) {
             System.out.print(i+"\t\t");
         }
 
         System.out.println("");
         System.out.print("* ");
 
-        for(int i = 1; i < B.length; i++) {
+        for(int i = 1; i < A.length; i++) {
             System.out.print("*\t\t");
         }
 
         System.out.println(" ");
 
-        for(int i  = 1; i < A.length; i++){
+        for(int i  = 1; i < B.length; i++){
 
             System.out.print(i+"*");
-            for(int j = 1; j < B.length; j++){
-                A[i] = i;
-                B[j] = j;
-                C[i][j] = A[i]*B[j];
+            for(int j = 1; j < A.length; j++){
+                B[i] = i;
+                A[j] = j;
+                C[i][j] = B[i]*A[j];
 
                 System.out.print(C[i][j]+"\t\t");
             }
