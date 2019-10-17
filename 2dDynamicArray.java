@@ -9,9 +9,7 @@ public class Main {
         
         Integer getfArray;
         Integer getsArray;
-        Integer finalres = 0;
-
-
+        
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the length of First Array: ");
